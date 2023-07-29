@@ -124,7 +124,7 @@ function loftloaderProInsertStyle( styleID, styleContent ) {
     document.head.appendChild( style );
 }
 if ( LoftLoaderProGlobalSessionStorage.getItem( 'loftloader-pro-smooth-transition' ) && ( 'on' === LoftLoaderProGlobalSessionStorage.getItem( 'loftloader-pro-smooth-transition' ) ) ) {
-    var onceStyles = '', initPercentage = loftloaderProProgressInit * 100;
+    var onceStyles = '', initPercentage = loftloaderProProgressInit * 0.001;
     init = loftloaderProProgressInit; }
 percentageStyles = '#loftloader-wrapper span.percentage:after, #loftloader-wrapper .load-count:after { content: "' + ( init * 100 ) + '%"; }';
 percentageStyles += ' #loftloader-wrapper .load-count { width: ' + ( init * 100 ) + '%; }';
